@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,200;1,300;1,600&family=Ubuntu:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+.navigation{
+    width: 1220px;
+    height: 80px;
+    top: 0;
+    background-color: aqua;
+    color: azure;
+    position: fixed;
+}
+
+.logo{
+    padding: 20px 0 0 30px;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    width: 200px;
+}
+.nav_list{
+    float: right;
+    padding: 10px;
+    position:relative;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    padding-bottom: 23px;
+}
+
+.navigation .nav_list{
+    position: relative;
+    display: flex;
+    right: 0;
+    /* width: calc(1220px - 500px); */
+}
+.nav_list ul{
+    right: 0;
+    position: relative;
+    display: flex;
+    /* width: 100%; */
+    /* padding: 20px 10px 10px 0; */
+}
+
+.nav_list ul li{
+    list-style: none;
+    padding: 20px 0 0 30px;
+}
+
+.nav_list ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 
+styling the hanbuger */
+
+
+.nav_list i{
+    display: none;
+}
+
+
+@media(max-width: 705px){
+    body{
+        background-color: aquamarine;
+    }
+    .navigation{
+        width: 100%;
+        background-color: #111;
+    }
+    .navigation .nav_list{
+        transform: translateX(-40%);
+        padding: 30px;
+        
+    }
+    .nav_list i{
+        /* display: block;
+        text-align: center;
+        color: white; */
+        display: inline;
+        font-size: 30px;
+        line-height: 10px;
+    }
+    .nav_list i:hover{
+        color: aliceblue;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .nav_list ul{
+        padding-top: 30px;
+        position: relative;
+        display: block;
+        padding-right: 50%;
+        height: 100%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
